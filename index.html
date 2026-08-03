@@ -188,45 +188,4 @@
     <p>Support: support@rechargecheck.com</p>
   </footer>
 
-  <script>
-    function verifierTicket() {
-      const code = document.getElementById('ticketCode').value;
-      const result = document.getElementById('result');
-      
-      if(code === "") {
-        result.innerHTML = "⚠️ Veuillez entrer un code";
-        result.style.color = "var(--danger)";
-        return;
-      }
-      
-      // Ici tu connecteras ton API de vérification
-      result.innerHTML = "⏳ Vérification en cours...";
-      result.style.color = "var(--dark)";
-      
-      setTimeout(() => {
-        result.innerHTML = "✅ Ticket valide ! Montant: NET ✅";
-        result.style.color = "var(--primary)";
-      }, 1500);
-    }
-  </script>
-
-</body>
-</html>
-
-<form action="https://formsubmit.co/faelmanuel957@gmail.com" method="POST">
-
-  <input
-    type="text"
-    name="message"
-    placeholder="Écrivez votre message..."
-    required
-    style="width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;">
-
-  <br><br>
-
-  <button type="submit"
-    style="background:#28a745;color:white;padding:12px 25px;border:none;border-radius:8px;cursor:pointer;">
-    Vérifier
-  </button>
-
-</form>
+  
